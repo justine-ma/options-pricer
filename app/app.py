@@ -9,7 +9,9 @@ import time
 from datetime import datetime
 from mpl_toolkits.mplot3d import Axes3D
 
-sys.path.append('..')
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 warnings.filterwarnings('ignore')
 
 from src.black_scholes import bsm_price, put_call_parity_check
